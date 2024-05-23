@@ -1,0 +1,30 @@
+  132  clear
+  133  history
+  134  clear
+  135  ls
+  136  cat Prenoms.csv 
+  137  clear
+  138  grep "France,2019,PHP" < wilders.csv 
+  139  grep "France,2019,PHP" < wilders.csv | wc -l
+  140  grep "France,2019,PHP" < wilders.csv | wc -l > php_france_2019.csv
+  141  cat php_france_2019.csv 
+  142  grep "Javascript,Toulouse" < wilders.csv 
+  143  grep "Toulouse" < wilders.csv 
+  144  grep "Toulouse,Javascript" < wilders.csv 
+  145  grep "Toulouse,JavaScript" < wilders.csv 
+  146  clear
+  147  cat wilders.csv 
+  148  grep "JavaScript" <wilders.csv 
+  149  grep "JavaScript" <wilders.csv | grep "Toulouse"
+  150  grep "JavaScript" <wilders.csv | grep "Toulouse" > javascript_toulouse.csv
+  151  cat javascript_toulouse.csv 
+  152  grep "JavaScript" < wilders.csv 
+  153  grep "JavaScript" < wilders.csv | grep Biarritz > javascript_biarritz
+  154  grep "JavaScript" < wilders.csv | grep Biarritz > javascript_biarritz.csv
+  155  cat javascript_biarritz.csv 
+  156  cat javascript_toulouse.csv javascript_biarritz.csv > javascript_biarritz_toulouse.csv
+  157  cat javascript_biarritz_toulouse.csv 
+  158  ls
+  159  rm javascript_biarritz
+  160  ls
+  161  history | tail -n 30 > history.txt
